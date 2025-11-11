@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 35px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #d9d9d9;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  color: #fff;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 6px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #ccc;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+.midsection1 {
+  align-items: center;
+  padding-top: 170px;
+  padding-left: 150px;
+  display: grid; 
+  height: 200px;
+  width: 400px;
+}
+.text { 
+  font-size: x-large;
+  height: 150px;
+  width: 400px;
+}
+.button {
+  align-items: center;
+  width: 60px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transform: translatex(5px);
+}
