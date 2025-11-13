@@ -8,67 +8,87 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Background Video -->
-   <div>
-  <video autoplay muted loop id="bg-video">
-    <source src="bgvideos/141578-777930468.mp4" type="video/mp4">
-  </video>
 
-  <!-- header -->
-  <header class="header">
-    <div class="logo">
-      <a href="index.html"><img src="spacex logo.png" alt="SpaceX Logo"></a>
+  <!-- FIRST SECTION VIDEO  -->
+  <section class="section hero-section">
+    <video autoplay muted loop class="bg-video">
+      <source src="bgvideos/58290-488224724.mp4" type="video/mp4">
+    </video>
+
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="spacex logo.png" alt="SpaceX Logo"></a>
+      </div>
+
+      <nav class="nav">
+        <div class="dropdown">
+          <button class="dropdown-btn">Upcoming Launches <span class="arrow">&#x25BE;</span></button>
+          <div class="dropdown-content">
+            <a href="https://www.spacex.com/launches">Falcon 9 • Starlink Mission</a>
+            <a href="https://www.spacex.com/launches">Falcon Heavy • Jupiter Probe</a>
+            <a href="https://www.spacex.com/launches">Dragon • ISS Cargo Mission</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Missions <span class="arrow">&#x25BE;</span></button>
+          <div class="dropdown-content">
+            <a href="https://www.spacex.com/launches">Falcon Heavy</a>
+            <a href="https://www.spacex.com/launches">Crew Dragon</a>
+            <a href="https://www.spacex.com/launches">Starship</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Vehicles <span class="arrow">&#x25BE;</span></button>
+          <div class="dropdown-content">
+            <a href="falcon.html">Falcon 9</a>
+            <a href="falconheavy.html">Falcon Heavy</a>
+            <a href="dragon.html">Dragon</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">About <span class="arrow">&#x25BE;</span></button>
+          <div class="dropdown-content">
+            <a href="https://www.spacex.com/mission">Company Info</a>
+            <a href="https://www.spacex.com/careers">Careers</a>
+            <a href="https://www.spacex.com/updates">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <h1>MAKING LIFE MULTIPLANETARY</h1>
+      <p>SpaceX was founded under the belief that a future where humanity explores the stars is more exciting than one where we do not.</p>
+      <div class="button"><div class="explore">EXPLORE</div></div>
     </div>
+  </section>
 
-    <nav class="nav">
-      <div class="dropdown">
-        <button class="dropdown-btn">Upcoming Launches <span class="arrow">&#x25BE;</span></button>
-        <div class="dropdown-content">
-          <a href="#">Falcon 9 • Starlink Mission</a>
-          <a href="#">Falcon Heavy • Jupiter Probe</a>
-          <a href="#">Dragon • ISS Cargo Mission</a>
-        </div>
-      </div>
 
-      <div class="dropdown">
-        <button class="dropdown-btn">Missions <span class="arrow">&#x25BE;</span></button>
-        <div class="dropdown-content">
-          <a href="#">Falcon Heavy</a>
-          <a href="#">Crew Dragon</a>
-          <a href="#">Starship</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropdown-btn">Vehicles <span class="arrow">&#x25BE;</span></button>
-        <div class="dropdown-content">
-          <a href="#">Falcon 9</a>
-          <a href="#">Falcon Heavy</a>
-          <a href="#">Dragon</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropdown-btn">About <span class="arrow">&#x25BE;</span></button>
-        <div class="dropdown-content">
-          <a href="#">Company Info</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="midsection1">
-    <div class="text">
-    <h1>MAKING LIFE MULTIPLANETARY</h1>
+  <!-- SECOND SECTION-->
+  <section class="section image-section">
+    <img src="bgvideos/spacex-MEW1f-yu2KI-unsplash.jpg" alt="Starship" class="bg-image" />
+    <div class="content">
+      <h1>STARSHIP TEST FLIGHTS</h1>
+      <p>Developing the fully reusable transportation system to carry both crew and cargo to Earth orbit, the Moon, and Mars.</p>
+      <div class="button"><div class="explore">LEARN MORE</div></div>
     </div>
-    <p>SpaceX was founded under the belief that a future where humanity is
-     out exploring the stars is fundamentally more exciting than one where we are not.</p>
-      
-       <div class="button"> 
-        <div class="explore">EXPOLRE</div>
-       </div>
-  </div>
-  </div>
+  </section>
+
+
+  <!--  THIRD SECTION  -->
+  <section class="section video-section">
+    <video autoplay muted loop class="bg-video">
+      <source src="bgvideos\217994.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>STARSHIP </h1>
+      <p>The Most Advance Space Station Dominating into orbit.</p>
+      <div class="button"><div class="explore">WATCH LAUNCH</div></div>
+    </div>
+  </section>
+
 </body>
 </html>
